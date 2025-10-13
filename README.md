@@ -2,7 +2,7 @@
 
 ### Comparative Study of AI-based and Traditional Audio Watermarking Methods
 
-This repository accompanies the research work *"Assessing Progress over a Decade of Digital Audio Watermarking Research"* (IEEE Access, 2024).
+This repository accompanies the research work *"Assessing Progress over a Decade of Digital Audio Watermarking Research"* (IEEE Access, 2025 XXXX).
 
 This project provides a systematic comparison between **traditional signal-processing** and **AI-based** audio watermarking methods.  
 We implemented the classical **STAMP** system and benchmarked it against three state-of-the-art neural approaches - **AudioSeal**, **WavMark**, and **SilentCipher** - across diverse datasets (speech, multilingual speech, and music) and a wide range of perturbations.
@@ -51,16 +51,16 @@ Overall, the results highlight that **classical signal-processing systems** stil
 
 The repository is organized into four main directories:
 
-- **Dataset/** – audio datasets used for benchmarking and evaluation (speech and music).  
-- **Systems/** – implementations of both classical and AI-based watermarking systems.  
-- **Attacks/** – signal perturbation scripts for robustness testing.  
-- **QualityMetrics/** – evaluation tools and scripts for measuring audio quality and imperceptibility (e.g., SNR, PESQ, STOI, ViSQOL).
+- **Dataset/**: audio datasets used for benchmarking and evaluation (speech and music).  
+- **Systems/**: implementations of both classical and AI-based watermarking systems.  
+- **Attacks/**: signal perturbation scripts for robustness testing.  
+- **QualityMetrics/**: evaluation tools and scripts for measuring audio quality and imperceptibility (e.g., SNR, PESQ, STOI, ViSQOL).
 
 ```text
 AudioWatermarking_AI_vs_Traditional/
 │
 ├── Dataset/
-│   ├── AudioMarkBench/          # Multilingual speech benchmark
+│   ├── AudioMark/          # Multilingual speech benchmark
 │   ├── LibriSpeech/             # English speech dataset
 │   └── FMA/                     # Free Music Archive dataset
 │
