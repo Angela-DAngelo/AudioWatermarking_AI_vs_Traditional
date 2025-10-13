@@ -96,7 +96,7 @@ XXXXXXXXXXXXXX
 ---
 
 ## ⚖️ License
-MIT License — see `LICENSE` file for details.
+XXXXXXX — see `LICENSE` file for details.
 
 ---
 
