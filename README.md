@@ -4,7 +4,8 @@
 
 This repository accompanies the research work *"Assessing Progress over a Decade of Digital Audio Watermarking Research"* (IEEE Access, 2024).
 
-It provides a comparative framework between classical signal-processing watermarking (STAMP) and modern AI-based approaches such as AudioSeal, WavMark, and SilentCipher.
+This project provides a systematic comparison between **traditional signal-processing** and **AI-based** audio watermarking methods.  
+We implemented the classical **STAMP** system and benchmarked it against three state-of-the-art neural approaches - **AudioSeal**, **WavMark**, and **SilentCipher** - across diverse datasets (speech, multilingual speech, and music) and a wide range of perturbations.
 
 ---
 
@@ -17,6 +18,12 @@ This project evaluates both paradigms under identical conditions, assessing:
 - **Imperceptibility**
 - **Robustness**
 - **Bit recovery accuracy**
+
+The repository includes implementations, benchmarks, and evaluation tools used in the comparative study.  
+It aims to provide a **reproducible experimental framework** for researchers and practitioners interested in testing or extending audio watermarking methods under standardized conditions.
+
+Overall, the results highlight that **classical signal-processing systems** still achieve competitive and often superior robustness compared to modern neural architectures, emphasizing the enduring value of traditional design principles in contemporary audio watermarking.
+
 
 ---
 
