@@ -20,12 +20,12 @@ This project evaluates both paradigms under identical conditions, assessing:
 
 ---
 
-## 🤖 Systems Included
+## 🤖 Audio Watermarking Systems
 
 - **STAMP**: **S**pectral **T**ransform-domain **A**udio **M**arking with **P**erceptual model (proposed classical system)
-- **AudioSeal**: https://github.com/facebookresearch/audioseal 
-- **WavMark**: https://github.com/wavmark/wavmark
-- **SilentCipher**: https://github.com/sony/silentcipher
+- **AudioSeal**: https://github.com/facebookresearch/audioseal (state-of-the-art AI-based system)
+- **WavMark**: https://github.com/wavmark/wavmark (state-of-the-art AI-based system)
+- **SilentCipher**: https://github.com/sony/silentcipher (state-of-the-art AI-based system)
 
 ---
 
@@ -40,31 +40,40 @@ This project evaluates both paradigms under identical conditions, assessing:
 
 ---
 
-## 📁 Repository Structure
+## 🗂️ Repository Structure
 
-The repository is organized into three main directories:
-- **Dataset/** – contains the audio datasets used for benchmarking and evaluation.
-- **Systems/** – includes implementations of both classical and AI-based watermarking systems.
-- **Attacks/** – provides scripts for generating and applying signal perturbations.
+The repository is organized into four main directories:
+
+- **Dataset/** – audio datasets used for benchmarking and evaluation (speech and music).  
+- **Systems/** – implementations of both classical and AI-based watermarking systems.  
+- **Attacks/** – signal perturbation scripts for robustness testing.  
+- **QualityMetrics/** – evaluation tools and scripts for measuring audio quality and imperceptibility (e.g., SNR, PESQ, STOI, ViSQOL).
 
 ```text
 AudioWatermarking_AI_vs_Traditional/
 │
 ├── Dataset/
-│   ├── AudioMarkBench/
-│   ├── LibriSpeech/
-│   └── FMA/
+│   ├── AudioMarkBench/          # Multilingual speech benchmark
+│   ├── LibriSpeech/             # English speech dataset
+│   └── FMA/                     # Free Music Archive dataset
 │
 ├── Systems/
-│   ├── STAMP/
-│   ├── AudioSeal/
-│   ├── WavMark/
-│   └── SilentCipher/
+│   ├── STAMP/                   # Classical signal-processing system (proposed)
+│   ├── AudioSeal/               # AI-based sequence-to-sequence watermarking
+│   ├── WavMark/                 # Spectrogram-based neural watermarking
+│   └── SilentCipher/            # Deep spectrogram watermarking with psychoacoustic model
 │
 ├── Attacks/
 │   ├── apply_audio_perturbations.py
 │
-└── results/
+├── QualityMetrics/
+│   ├── quality_metrics_dir.py
+│   └── visqol_evaluation.m         # Virtual Speech Quality Objective Listener
+│
+├── results/                     # Evaluation outputs and plots
+│
+├── requirements.txt             # Python dependencies
+└── README.md
 
 ```
 
