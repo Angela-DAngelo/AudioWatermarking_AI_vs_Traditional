@@ -64,7 +64,7 @@ AudioWatermarking_AI_vs_Traditional/
 │   ├── apply_audio_perturbations.py
 │
 ├── Dataset/
-│   ├── AudioMark/          # Multilingual speech benchmark
+│   ├── AudioMark/               # Multilingual speech benchmark
 │   ├── LibriSpeech/             # English speech dataset
 │   └── FMA/                     # Free Music Archive dataset
 │
@@ -76,7 +76,7 @@ AudioWatermarking_AI_vs_Traditional/
 │
 ├── QualityMetrics/
 │   ├── quality_metrics_dir.py
-│   └── visqol_evaluation.m         # Virtual Speech Quality Objective Listener
+│   └── visqol_evaluation.m      # Virtual Speech Quality Objective Listener
 │
 ├── Results/                     # Evaluation outputs and plots
 │
