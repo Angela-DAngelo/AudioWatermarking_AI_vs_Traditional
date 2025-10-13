@@ -73,14 +73,13 @@ AudioWatermarking_AI_vs_Traditional/
 │   ├── WavMark/                 # Spectrogram-based neural watermarking
 │   └── SilentCipher/            # Deep spectrogram watermarking with psychoacoustic model
 │
-│
 ├── QualityMetrics/
 │   ├── quality_metrics_dir.py
 │   └── visqol_evaluation.m         # Virtual Speech Quality Objective Listener
 │
-├── results/                     # Evaluation outputs and plots
+├── Results/                     # Evaluation outputs and plots
 │
-├── requirements.txt             # Python dependencies
+├── Requirements.txt             # Python dependencies
 └── README.md
 
 ```
