@@ -59,6 +59,9 @@ The repository is organized into four main directories:
 ```text
 AudioWatermarking_AI_vs_Traditional/
 │
+├── Attacks/
+│   ├── apply_audio_perturbations.py
+│
 ├── Dataset/
 │   ├── AudioMark/          # Multilingual speech benchmark
 │   ├── LibriSpeech/             # English speech dataset
@@ -70,8 +73,6 @@ AudioWatermarking_AI_vs_Traditional/
 │   ├── WavMark/                 # Spectrogram-based neural watermarking
 │   └── SilentCipher/            # Deep spectrogram watermarking with psychoacoustic model
 │
-├── Attacks/
-│   ├── apply_audio_perturbations.py
 │
 ├── QualityMetrics/
 │   ├── quality_metrics_dir.py
