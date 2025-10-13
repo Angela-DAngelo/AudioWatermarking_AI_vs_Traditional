@@ -51,10 +51,11 @@ Overall, the results highlight that **classical signal-processing systems** stil
 
 The repository is organized into four main directories:
 
+- **Attacks/**: signal perturbation scripts for robustness testing. 
 - **Dataset/**: audio datasets used for benchmarking and evaluation (speech and music).  
-- **Systems/**: implementations of both classical and AI-based watermarking systems.  
-- **Attacks/**: signal perturbation scripts for robustness testing.  
+- **Systems/**: implementations of both classical and AI-based watermarking systems.   
 - **QualityMetrics/**: evaluation tools and scripts for measuring audio quality and imperceptibility (e.g., SNR, PESQ, STOI, ViSQOL).
+- **Results/**: outputs and plots
 
 ```text
 AudioWatermarking_AI_vs_Traditional/
