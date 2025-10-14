@@ -4,7 +4,9 @@ This section describes the **audio quality metrics** used to evaluate the effect
 
 | **Metric** | **Description** | **Typical Range** | **Interpretation** |
 |-------------|-----------------|------------------:|--------------------|
+| **MSE (Mean Squared Error)** | Measures the average squared difference between the original and processed signals. Lower values indicate higher similarity. | 0 – 0.01 | Lower is better |
 | **SNR (Signal-to-Noise Ratio)** | Measures the ratio between the original signal power and the noise introduced by processing. Higher values indicate better preservation of the signal. | 0 – 40 dB | Higher is better |
+| **SI-SNR (Scale-Invariant Signal-to-Noise Ratio)** | Similar to SNR but invariant to scale differences between signals, often used in speech enhancement tasks. | 0 – 40 dB | Higher is better |
 | **PESQ (Perceptual Evaluation of Speech Quality)** | Standard ITU-T P.862 perceptual metric for speech quality. Outputs a Mean Opinion Score (MOS) prediction. | 1 – 4.5 | Higher is better |
 | **STOI (Short-Time Objective Intelligibility)** | Estimates speech intelligibility by comparing short-time temporal envelopes between reference and degraded signals. | 0 – 1 | Higher is better |
 | **ViSQOL (Virtual Speech Quality Objective Listener)** | Full-reference perceptual metric developed by Google, estimating MOS-LQO (Mean Opinion Score – Listening Quality Objective). | 1 – 5 | Higher is better |
@@ -23,7 +25,7 @@ The **ViSQOL** metric was computed using the official MATLAB implementation avai
 The metrics **SNR**, **PESQ**, and **STOI** are implemented in the Python script [`quality_metrics.py`](./quality_metrics.py):contentReference[oaicite:0]{index=0}.  
 This script automatically compares pairs of audio files (original vs. watermarked) and saves the results in an Excel file.
 
-### ⚙️ Usage
+### Usage
 
 From the command line:
 ```bash
@@ -34,7 +36,7 @@ python quality_metrics.py --orig path/to/originals
 
 ```
 
-### 🧾 Arguments
+### Arguments
 
 | **Argument** | **Description** | **Default** |
 |---------------|-----------------|-------------|
@@ -48,22 +50,22 @@ python quality_metrics.py --orig path/to/originals
 
 ---
 
-### 📊 Output
+### Output
 
 After execution, the script prints per-file results and saves a summary Excel file with all metrics:
 
-| **file** | **mse** | **snr** | **stoi** | **pesq** |
-|-----------|----------|----------|-----------|-----------|
-| 001 | 0.0015 | 23.45 | 0.9851 | 4.20 |
-| 002 | 0.0020 | 20.75 | 0.9723 | 3.85 |
-| ... | ... | ... | ... | ... |
+| **file** | **mse** | **snr** | **si-snr** | **stoi** | **pesq** |
+|-----------|----------|----------|-------------|-----------|-----------|
+| 001 | 0.0015 | 23.45 | 22.87 | 0.9851 | 4.20 |
+| 002 | 0.0020 | 20.75 | 19.92 | 0.9723 | 3.85 |
+| ... | ... | ... | ... | ... | ... |
 
 Results are saved to the specified output file (i.e.: `results.xlsx`).
 The console also displays average values of all metrics at the end of processing:
 
 ---
 
-### 📝 Notes
+### Notes
 
 - Input files must be mono `.wav` audio files sampled at the same rate (default 16 kHz).  
 - PESQ, and STOI are implemented in Python using the official libraries:
