@@ -1,5 +1,9 @@
 # 🎵 AudioWatermarking_AI_vs_Traditional
 
+![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![MATLAB](https://img.shields.io/badge/Language-MATLAB-0076A8?logo=mathworks&logoColor=white&style=for-the-badge)
+
+
 ### Comparative Study of AI-based and Traditional Audio Watermarking Methods
 
 This repository accompanies the research work *"Assessing Progress over a Decade of Digital Audio Watermarking Research"* (IEEE Access, 2025 XXXX).
