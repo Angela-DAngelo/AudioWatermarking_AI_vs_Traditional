@@ -73,7 +73,7 @@ AudioWatermarking_AI_vs_Traditional/
 │   └── FMA/                     # Free Music Archive dataset
 │
 ├── Systems/
-│   ├── STAMP/                   # Classical signal-processing system (proposed)
+│   ├── STAMP/                   # Classical signal-processing system 
 │   ├── AudioSeal/               # AI-based sequence-to-sequence watermarking
 │   ├── WavMark/                 # Spectrogram-based neural watermarking
 │   └── SilentCipher/            # Deep spectrogram watermarking with psychoacoustic model
@@ -82,7 +82,8 @@ AudioWatermarking_AI_vs_Traditional/
 │   ├── quality_metrics.py
 │
 ├── Results/                     # Evaluation outputs and plots
-│
+│   ├── Audio/                   # Sample watermarked audio
+|
 └── README.md
 
 ```
