@@ -4,9 +4,9 @@
 ![MATLAB](https://img.shields.io/badge/Language-MATLAB-0076A8?logo=mathworks&logoColor=white&style=for-the-badge)
 
 
-### Comparative Study of AI-based and Traditional Audio Watermarking Methods
+### Beyond the Hype: A Comparison Between Traditional Model-Driven and AI-Based Audio Watermarking
 
-This repository accompanies the research work *"Comparing Traditional and Modern Approaches in Digital Audio Watermarking"* (IEEE Access, 2025 XXXX).
+This repository accompanies the research work *"Beyond the Hype: A Comparison Between Traditional Model-Driven and AI-Based Audio Watermarking"* (IEEE Access, 2025 XXXX).
 
 This project provides a systematic comparison between **traditional signal-processing** and **AI-based** audio watermarking methods.  
 We implemented the classical **STAMP** system and benchmarked it against three state-of-the-art neural approaches - **AudioSeal**, **WavMark**, and **SilentCipher** - across diverse datasets (speech, multilingual speech, and music) and a wide range of perturbations.
