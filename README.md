@@ -1,10 +1,10 @@
-# 🎵 Traditional vs Modern Audio Watermarking
+# 🎵 Beyond the Hype: A Comparison Between Traditional Model-Driven and AI-Based Audio Watermarking
 
 ![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
 ![MATLAB](https://img.shields.io/badge/Language-MATLAB-0076A8?logo=mathworks&logoColor=white&style=for-the-badge)
 
 
-### Beyond the Hype: A Comparison Between Traditional Model-Driven and AI-Based Audio Watermarking
+### Traditional Model-Driven vs AI-Based Audio Watermarking
 
 This repository accompanies the research work *"Beyond the Hype: A Comparison Between Traditional Model-Driven and AI-Based Audio Watermarking"* (IEEE Access, 2025 XXXX).
 
